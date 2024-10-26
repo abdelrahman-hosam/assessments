@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google flights demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="left_side">
+            <div class="left">
+                <span></span>
+                <a target="_blank" href="http://www.google.com"><img src="images/google_icon.webp"></a>
+            </div>
+            <div class="right">
+                <a><i class="fa-solid fa-suitcase"></i><p>travel</p></a>
+                <a><i class="fa-solid fa-globe"></i><p>explore</p></a>
+                <a><i class="fa-solid fa-plane"></i><p>flights</p></a>
+                <a><i class="fa-solid fa-bed"></i><p>hotels</p></a>
+                <a><i class="fa-solid fa-house"></i><p>vocation rentals</p></a>
+            </div>
+        </div>
+        <div class="right_side">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-braille"></i>
+        </div>
+    </header>
+    <section class="flights_section">
+        <div class="flights">
+            <img src="./images/flights_nc_4.svg">
+            <p>flights</p>
+        </div>
+        <div class="book_flights">
+            <div class="options">
+                <select>
+                    <option>round-trip</option>
+                    <option>one way</option>
+                    <option>multi-city</option>
+                </select>
+                <select>
+                    <option>adults</option>
+                    <option>children</option>
+                    <option>infants</option>
+                    <option>infants</option>
+                </select>
+                <select>
+                    <option>economy</option>
+                    <option>premium economy</option>
+                    <option>first</option>
+                    <option>business</option>
+                </select>
+            </div>
+            <div class="info">
+                <div class="destination">
+                    <input type="text" placeholder="from">
+                    <button class="swap-btn">⇆</button>
+                    <input type="text" placeholder="where to">
+                </div>
+                    <div class="date">
+                            <input type="text" placeholder="departure">
+                            <input type="text" placeholder="return">
+                    </div>
+            </div>
+            <div class="search-btn">
+                <button>explore</button>
+            </div>
+        </div>
+    </section>
+    <section class="explore"> 
+        <div class="airports">
+        <h2>Find cheap flights from Cairo to anywhere</h2>
+        <script src="get_location.js" defer></script>
+        </div>
+        <div class="map" id="map"> 
+            <img src="./images/world_map.png" alt="world map">
+        </div>
+        <div class="suggested_trips">
+            <div class="suggested_trip">
+                <div class="image">
+                    <img >
+                </div>
+                <div class="info">
+                    <div class="main_info">
+
+                    </div>
+                    <div class="other_info">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tools">
+        <aside class="tools_info">
+        <h2>Useful tools to help you find the best deals</h2>
+        <div class="tool" id="tool1" onclick="show_details(this)">
+            <i class="fa-regular fa-calendar-days"></i>
+            <div class="details">
+                <h3>Find the cheapest days to fly</h3>
+                <p>The Date grid and Price graph make it easy to see the best flight deals</p>
+            </div>
+            </div>
+            <div class="tool" id="tool2" onclick="show_details(this)">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <div class="details">
+                    <h3>See the whole picture with price insights</h3>
+                    <p>Price history and trend data show you when to book to get the best price on your flight</p>
+                </div>
+            </div>
+            <div class="tool" id="tool3" onclick="show_details(this)">
+                <i class="fa-solid fa-bell"></i>
+                <div class="details">
+                    <h3>See the whole picture with price insights</h3>
+                    <p>Price history and trend data show you when to book to get the best price on your flight</p>
+                </div>
+            </div>
+        </aside>
+        <aside class="more_details" id="more_details">
+            <div class="details">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="image">
+            </div>
+        </aside>
+        <script src="./tools_information.js" defer></script>
+    </section>
+</body>
+</html>

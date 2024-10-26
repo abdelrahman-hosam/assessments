@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadee5;
+    z-index: 9999;
+}
+header .left_side{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    gap: 20px;
+}
+header .right_side{
+    display: flex;
+    align-items: center;
+}
+header .right_side i{
+    margin-right: 15px;
+    font-size: 23px;
+    color: grey;
+    padding: 4px;
+    transition: 0.5s;
+}
+header .right_side i:hover{
+    background-color: #e8f0fd;
+    border-radius: 50%;
+}
+header .left_side .right{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-around;
+    gap: 10px;
+}
+header .left_side .right a{
+    display: flex;
+    gap: 6px;
+    padding: 7px;
+    font-size: 15px;
+    border: 1px solid #ecedef;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+header .left_side .right a:hover{
+    background-color:#e8f0fd;
+    color: #166ef1;
+}
+header .left_side .right a i{
+   color: #166ef1;
+}
+header .left_side .right a p{
+   text-transform: capitalize;
+}
+header a img{
+    width: 100%;
+    height: 100%;
+}
+.flights_section{
+    padding-top: 5rem;
+    text-align: center;
+}
+.flights_section p{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.flights_section .book_flights{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+}
+.book_flights .info{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.flights_section .book_flights .options select{
+    border: none;
+    padding: 4px;
+    margin-bottom: 5px;
+    transition: 0.1s;
+}
+.flights_section .book_flights .options select:hover{
+    background-color: #e8f0fd;
+}
+.flights_section .book_flights .options select:hover option{
+    background-color: #fff;
+}
+.flights_section .book_flights .options select option{
+    background-color: #fff;
+}
+.flights_section .book_flights .destination , 
+.flights_section .book_flights .date{
+    display: flex;
+    justify-content: space-between;
+}
+.flights_section .book_flights .date{
+    border: 1px solid #e8f0fd;
+    border-radius: 5px;
+}
+.flights_section .book_flights .date input{
+    border: none;
+    transition: 0.1s;
+    flex: 1;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100%;
+    width: 50%;
+}
+.flights_section .book_flights .destination input , 
+.flights_section .book_flights .date input{
+    transition: 0.1s;
+    width: 30%;
+}
+.flights_section .book_flights .destination input{
+    border: 1px solid #dadee5;
+    border-radius: 5px;
+    padding: 7px;
+    flex: 1;
+}
+.flights_section .book_flights .destination input:focus , 
+.flights_section .book_flights .date input:focus{
+    outline: none;
+}
+.flights_section .book_flights .destination input:hover , 
+.flights_section .book_flights .date input:hover{
+    border: 1px solid rgb(65, 63, 63);
+}
+.flights_section .book_flights .destination button{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.search-btn{
+    width: 100%;
+    margin-bottom: -17px;
+    margin-top: 15px;
+}
+.search-btn button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.search-btn button:hover {
+    background-color: #0056b3;
+}
+.explore{
+    padding-top: 50px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+.explore .map{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+.explore .map img{
+    width: 100%;
+    height: 100%;
+}
+.explore .map::after{
+    content: 'Explore destinations';
+    position: absolute;
+    right: 40%;
+    top: 50%;
+    background-color: white;
+    color: #007bff;
+    padding: 7px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 1ms;
+    cursor: pointer;
+}
+.explore .map:hover::before{
+    content: ' ';
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    opacity: 0.3;
+    background-color: #e8f0fd;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.tools{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+.tools_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.tools_info .tool{
+    display: flex;
+    gap: 15px;
+    background-color: #f3f8fe;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+.tools_info .tool i{
+    color: #007bff;
+    font-size: 20px;
+}
+.tools_info .tool .details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tools_info .tool::after{
+    content: ' ';
+    right: -19px;
+    top: 45%;
+    position: absolute;
+    border-top: 18px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 20px solid #e8f0fd;
+    visibility: hidden;
+    transition: 0.1s;
+}
+.tools_info .tool.active::after{
+    visibility: visible;
+}
+.tools .more_details .details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.tools .more_details .details img{
+    width: 40%;
+    height: 40%;
+}
